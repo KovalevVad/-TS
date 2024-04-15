@@ -1,0 +1,146 @@
+:root {
+  --grey: rgb(169, 168, 168);
+  --black: black;
+  --white: white;
+  --ligth-pink: #ebd6f5;
+  font-family: "M PLUS 1 Code", monospace;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/img.jpg);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 1px solid var(--grey);
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px var(--black);
+}
+
+h1 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h2 {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.wrapper__input {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.wrapper__input-credit input[type="number"] {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--grey);
+  padding: 10px;
+  color:var(--white);
+  letter-spacing: 0.5px;
+}
+
+.wrapper__input input[type=range] {
+  background-color: var(--ligth-pink);
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  accent-color: var(--ligth-pink);
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper__input-credit,
+.wrapper__input-month {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+form input[type='submit'] {
+  color: var(--white);
+  position: absolute;
+  bottom: 20px;
+}
+
+.wrapper__input-month {
+  gap: 5px;
+  margin-top: 0px;
+}
+
+.wrapper__input-month input[type='number'] {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 40px;
+  color:var(--white);
+  font-size: 20px;
+}
+
+.wrapper__input-month span {
+  color: var(--white);
+}
+
+.wrapper__input #range-month {
+  width: 90%;
+  margin-top: 10px;
+  padding: 5px;
+  accent-color: var(--ligth-pink);
+  margin-top: 0px;
+}
+
+.wrapper__block {
+ display: flex;
+ margin-top: 10px;
+ gap: 20px;
+}
+
+.wrapper__block > .wrapper__input {
+  width: 50%;
+  margin-top: 0px;
+}
+
+.wrapper__monthlyPayment {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+label {
+  color: var(--white);
+}
+
+.wrapper__monthlyPayment > input {
+  color: var(--white);
+}
+
+

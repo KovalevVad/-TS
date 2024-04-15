@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <h1>Кредит</h1>
+      <form action="" id="wrapper__form" method="post">
+        <div class="wrapper__input">
+          <h2>Сумма кредита</h2>
+          <div class="wrapper__input-credit">
+            <input type="number" name="credit" id="credit" value="0" min="0" max="5000000" onKeyPress="if(this.value.length === 7) return false">
+            <img src="./img/ruble.svg" alt="рубль" height="30">
+          </div>
+          <input type="range" min="0" max="5000000" step="50000" value="10000" id="range-credit">
+        </div>
+        <div class="wrapper__block">
+          <div class="wrapper__input">
+            <h2>Срок кредита</h2>
+            <div class="wrapper__input-month">
+              <input type="number" name="month" id="month" value="6" min="6" max="72" onKeyPress="if(this.value.length === 2) return false">
+              <span>month</span>
+            </div>
+            <input type="range" min="6" max="72" step="6" value="6" id="range-month">
+          </div>
+          <div class="wrapper__monthlyPayment">
+            <label for="monthlyPayment">Ежемесячный платеж</label>
+            <input type="text" id="monthlyPayment" disabled>
+            <label for="AllSumma">Общая сумма</label>
+            <input type="text" id="AllSumma" disabled>
+          </div>
+        </div>
+        <div class="wrapper__input">
+          <h2>Процентная ставка</h2>
+          <div class="wrapper__input-month">
+            <input type="number" id="percent" value="5" name="percent" onKeyPress="if(this.value.length === 2) return false">
+            <span>%</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="./dist/index.js"></script>
+</body>
+</html>

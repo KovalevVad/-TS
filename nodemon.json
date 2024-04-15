@@ -1,0 +1,5 @@
+{
+  "includes": "./",
+  "ext": "ts",
+  "exec": "tsc"
+}

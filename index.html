@@ -23,7 +23,7 @@
             <input type="number" name="credit" id="credit" value="0" min="0" max="5000000" onKeyPress="if(this.value.length === 7) return false">
             <img src="./img/ruble.svg" alt="рубль" height="30">
           </div>
-          <input type="range" min="0" max="5000000" step="50000" value="10000" id="range-credit">
+          <input type="range" min="0" max="5000000" step="50000" value="10000" id="rangeCredit">
         </div>
         <div class="wrapper__block">
           <div class="wrapper__input">
@@ -32,13 +32,13 @@
               <input type="number" name="month" id="month" value="6" min="6" max="72" onKeyPress="if(this.value.length === 2) return false">
               <span>month</span>
             </div>
-            <input type="range" min="6" max="72" step="6" value="6" id="range-month">
+            <input type="range" min="6" max="72" step="6" value="6" id="rangeMonth">
           </div>
           <div class="wrapper__monthlyPayment">
             <label for="monthlyPayment">Ежемесячный платеж</label>
             <input type="text" id="monthlyPayment" disabled>
-            <label for="AllSumma">Общая сумма</label>
-            <input type="text" id="AllSumma" disabled>
+            <label for="allSumma">Общая сумма</label>
+            <input type="text" id="allSumma" disabled>
           </div>
         </div>
         <div class="wrapper__input">
